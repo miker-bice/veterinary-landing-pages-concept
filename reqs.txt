@@ -1,0 +1,11 @@
+fonts:
+poppins regular
+poppins medium
+poppins semi-bold
+poppins bold
+
+colors:
+primary: #fcc302
+secondary: #00bec9
+third: #343434
+nav-color: #daac00
