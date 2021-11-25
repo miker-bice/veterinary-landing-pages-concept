@@ -1,9 +1,123 @@
 /* variables */
+:root{
+    --primary: #fcc302;
+    --secondary: #00bec9;
+    --third: #343434;
+    --nav-color: #daac00;
+}
 
 /* reset */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+li,a{
+    text-decoration: none;
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
 
 /* base styles */
-
+.container-fluid{
+    padding: 30px;
+}
+.colored-background{
+    background-color: var(--primary);
+}
+.white-background{
+    background-color: #fff;
+}
+.btn-primary{
+    display: inline-block;
+    background-color: var(--secondary);
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+.btn-primary:hover{
+    background-color: #1eadb4;
+}
+.btn-outline{
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+.btn-outline:hover{
+    background-color: #fff;
+    color: var(--primary);
+}
+.btn-secondary{
+    display: inline-block;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+.btn-secondary:hover{
+    background-color: var(--nav-color);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.flex{
+    display: flex;
+}
+.align-items{
+    align-self: center;
+}
 /* fonts */
 
 /* mobile styles */
+.navigation{
+    background-color: var(--nav-color);
+    padding: 20px 30px;
+    align-items: center;
+}
+.nav-links{
+    visibility: hidden;
+}
+.nav-links a{
+    color: #fff;
+}
+.hero-text{
+    grid-column: 1/13;
+    text-align: center;
+}
+.main-heading{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.25em;
+    margin-bottom: 10px;
+}
+.sub-heading{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+.hero-buttons{
+    margin: 15px 0;
+}
+.hero-buttons a{
+    margin: 0 10px
+}
+.hero-img{
+    grid-column: 1/13;
+    text-align: center;
+}
+.hero-img img{
+    width: 65%;
+}
