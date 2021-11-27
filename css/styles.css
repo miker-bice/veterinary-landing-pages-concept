@@ -128,7 +128,6 @@ h1,h2,h3,h4,h5,p{
 }
 .lover-img{
     grid-column: 1/13;
-    
 }
 .lover-img img{
     width: 60%;
@@ -179,4 +178,32 @@ h1,h2,h3,h4,h5,p{
     font-size: .85em;
     width: 60%;
     margin: 0 auto;
+}
+.animal-lover2{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    color: var(--third);
+}
+.lover-img2{
+    grid-column: 1/13;
+}
+.lover-img2 img{
+    width: 60%;
+}
+.lover-text2{
+    grid-column: 1/13;
+}
+.lover-text2 h3{
+    font-size: 2em;
+    margin: 20px 0;
+}
+.lover-text2 p{
+    color: var(--third);
+    font-size: .85em;
+    width: 80%;
+    margin: 0 auto;
+}
+.lover-text2 a{
+    margin: 20px 0;
 }
