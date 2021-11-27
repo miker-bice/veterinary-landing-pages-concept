@@ -121,3 +121,32 @@ h1,h2,h3,h4,h5,p{
 .hero-img img{
     width: 65%;
 }
+.animal-lover{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px
+}
+.lover-img{
+    grid-column: 1/13;
+    
+}
+.lover-img img{
+    width: 60%;
+}
+.lover-text{
+    grid-column: 1/13;
+}
+.lover-text h3{
+    color: var(--third);
+    font-size: 2em;
+    margin: 20px 0;
+}
+.lover-text p{
+    color: var(--third);
+    font-size: .85em;
+    width: 80%;
+    margin: 0 auto;
+}
+.lover-text a{
+    margin: 20px 0;
+}
