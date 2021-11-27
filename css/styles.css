@@ -236,3 +236,31 @@ h1,h2,h3,h4,h5,p{
 .clients-card a{
     margin: 10px; 
 }
+.vetcare-team{
+    color: var(--third);
+    text-align: center;
+    padding: 30px 0;
+}
+.vetcare-team h3{
+    font-size: 2em;
+    margin: 20px 0;
+}
+.vetcare-team p{
+    font-size: .85em;
+    width: 80%;
+    margin: 0 auto;
+}
+.vet-team-card{
+    grid-column: 1/13;
+    margin: 30px 0;
+}
+.vet-team-card img{
+    width: var(--image-size);
+}
+.vet-team-card h4{
+    font-size: 1.5em;
+}
+.vet-team-card h5{
+    font-size: .85em;
+    font-weight: 400;
+}
