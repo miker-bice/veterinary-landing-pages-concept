@@ -264,3 +264,17 @@ h1,h2,h3,h4,h5,p{
     font-size: .85em;
     font-weight: 400;
 }
+#banner-section{
+    background: url(/img-assets/banner-img.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: rgba(red, green, blue, alpha); */
+}
+.banner{
+    text-align: center;
+    color: #fff;
+}
+.banner-item{
+    grid-column: 1/13;
+    margin: 15px 0;
+}
