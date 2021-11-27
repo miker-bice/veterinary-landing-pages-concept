@@ -207,3 +207,31 @@ h1,h2,h3,h4,h5,p{
 .lover-text2 a{
     margin: 20px 0;
 }
+.our-clients{
+    text-align: center;
+    color: #fff;
+    padding: 40px 0;
+}
+.our-clients h3{
+    font-size: 2em;
+    margin: 20px 0;
+}
+.our-clients p{
+    font-size: .85em;
+    width: 80%;
+    margin: 0 auto;
+}
+.clients-card{
+    grid-column: 1/13;
+    margin: 25px 0;
+}
+.clients-card img{
+    width: 60%;
+    border: 4px #fff solid;
+}
+.clients-card h4{
+    font-size: 2em;
+}
+.clients-card a{
+    margin: 10px; 
+}
