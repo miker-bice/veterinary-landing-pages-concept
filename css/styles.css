@@ -4,6 +4,7 @@
     --secondary: #00bec9;
     --third: #343434;
     --nav-color: #daac00;
+    --image-size: 250px;
 }
 
 /* reset */
@@ -130,7 +131,7 @@ h1,h2,h3,h4,h5,p{
     grid-column: 1/13;
 }
 .lover-img img{
-    width: 60%;
+    width: var(--image-size);
 }
 .lover-text{
     grid-column: 1/13;
@@ -168,7 +169,7 @@ h1,h2,h3,h4,h5,p{
     margin: 20px;
 }
 .services-card img{
-    width: 60%;
+    width: var(--image-size);
     border: 4px #fff solid;
 }
 .services-card h4{
@@ -189,7 +190,7 @@ h1,h2,h3,h4,h5,p{
     grid-column: 1/13;
 }
 .lover-img2 img{
-    width: 60%;
+    width: var(--image-size);
 }
 .lover-text2{
     grid-column: 1/13;
@@ -226,7 +227,7 @@ h1,h2,h3,h4,h5,p{
     margin: 25px 0;
 }
 .clients-card img{
-    width: 60%;
+    width: var(--image-size);
     border: 4px #fff solid;
 }
 .clients-card h4{
