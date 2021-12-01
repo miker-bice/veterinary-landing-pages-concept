@@ -18,6 +18,8 @@ body{
 li,a{
     text-decoration: none;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 h1,h2,h3,h4,h5,p{
     margin: 0;
@@ -268,7 +270,6 @@ h1,h2,h3,h4,h5,p{
     background: url(/img-assets/banner-img.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    /* background-color: rgba(red, green, blue, alpha); */
 }
 .banner{
     text-align: center;
@@ -277,4 +278,41 @@ h1,h2,h3,h4,h5,p{
 .banner-item{
     grid-column: 1/13;
     margin: 15px 0;
+}
+footer{
+    background-color: var(--third);
+    color: #fff;
+}
+footer a{
+    color: #fff;
+    padding: 0;
+}
+.about-footer{
+    grid-column: 1/7;
+    padding: 0 15px;
+}
+.about-footer-items{
+    padding-left: 0;
+}
+.about-footer-item{
+    font-size: .90em;
+}
+.services-footer{
+    grid-column: 7/13;
+    padding: 0 15px;
+}
+.services-footer-items{
+    padding-left: 0;
+}
+.services-footer-item{
+    font-size: .90em;
+}
+.subscribe-footer{
+    grid-column: 1/13;
+    text-align: center;
+    justify-items: center;
+    margin-top: 30px;
+}
+.subscribe-footer p{
+    font-size: .90em;
 }
