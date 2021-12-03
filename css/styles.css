@@ -338,6 +338,45 @@ footer a{
     .hero-img img{
         width: 65%;
     }
+    .lover-text h3{
+        font-size: 2.25em;
+    }
+    .lover-text p{
+        font-size: 1em;
+    }
+    .lover-text a{
+        font-size: 1.15em;
+    }
+    .service-header{
+        font-size: 2.25em;
+    }
+    .service-subheader{
+        font-size: 1em;
+    }
+    .lover-text2 h3{
+        font-size: 2.25em;
+    }
+    .lover-text2 p{
+        font-size: 1em;
+    }
+    .lover-text2 a{
+        font-size: 1.15em;
+    }
+    .our-clients h3{
+        font-size: 2.25em;
+    }
+    .our-clients p{
+        font-size: 1em;
+    }
+    .clients-card a{
+        font-size: 1.15em;
+    }
+    .vetcare-team h3{
+        font-size: 2.25em;
+    }
+    .vetcare-team p{
+        font-size: 1em;
+    }
     .banner-item1{
         grid-column: 1/5;
     }
