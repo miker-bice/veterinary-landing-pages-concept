@@ -178,20 +178,14 @@ h1,h2,h3,h4,h5,p{
     grid-column: 1/13;
     margin: 20px;
 }
-.services-card1 img,
-.services-card2 img,
-.services-card3 img{
+.services-cards img{
     width: var(--image-size);
     border: 4px #fff solid;
 }
-.services-card1 h4,
-.services-card2 h4,
-.services-card3 h4{
+.services-cards h4{
     font-size: 2em;
 }
-.services-card1 p,
-.services-card2 p,
-.services-card3 p{
+.services-cards p{
     font-size: .85em;
     width: 60%;
     margin: 0 auto;
