@@ -127,7 +127,10 @@ h1,h2,h3,h4,h5,p{
 .animal-lover{
     text-align: center;
     padding-top: 70px;
-    padding-bottom: 50px
+    padding-bottom: 50px;
+    /* override to the display: grid */
+    display: flex;
+    flex-direction: column-reverse;
 }
 .lover-img{
     grid-column: 1/13;
@@ -187,6 +190,8 @@ h1,h2,h3,h4,h5,p{
     padding-top: 70px;
     padding-bottom: 50px;
     color: var(--third);
+    display: flex;
+    flex-direction: column-reverse;
 }
 .lover-img2{
     grid-column: 1/13;
@@ -428,5 +433,22 @@ footer a{
     }
     .hero-buttons > a{
             margin-right: 15px;
+    }
+    .animal-lover{
+        display: grid;
+        align-items: center;
+    }
+    .lover-text{
+        grid-column: 1/7;
+        text-align: left;
+    }
+    .lover-text p{
+        margin: 0;
+    }
+    .lover-img{
+        grid-column: 7/13;
+    }
+    .lover-img img{
+        width: 350px;
     }
 }
