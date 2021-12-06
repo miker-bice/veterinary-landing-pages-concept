@@ -409,10 +409,11 @@ footer a{
 /* large tablets & laptop styles */
 @media screen and (min-width: 960px) {
     .container-fluid{
-        padding: 60px 70px;
+        /* padding: 60px 70px; */
+        padding: 6% 10%;
     }
     .navigation{ 
-        padding: 20px 70px;
+        padding: 20px 10%;
     }
     .navbar-brand{
         grid-column: 1/5;
