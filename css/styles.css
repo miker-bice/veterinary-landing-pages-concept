@@ -358,6 +358,17 @@ footer a{
 .subscribe-footer p{
     font-size: .90em;
 }
+.subscribe-footer form{
+    margin-top: 20px;
+}
+.subscribe-footer input{
+    width: 60%;
+    height: 100%;
+}
+.subscribe-footer a{
+    border-radius: 0;
+    margin-left: -5px;
+}
 
 /* small tablet styling */
 @media screen and (min-width: 620px) {
