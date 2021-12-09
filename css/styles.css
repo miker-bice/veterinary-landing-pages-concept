@@ -372,6 +372,12 @@ footer a{
 
 /* small tablet styling */
 @media screen and (min-width: 620px) {
+    .container-fluid{
+        padding: 6% 9%;
+    }
+    .navigation{ 
+        padding: 20px 9%;
+    }
     .main-heading{
         color: #fff;
         font-weight: 600;
