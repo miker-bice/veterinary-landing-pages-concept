@@ -543,5 +543,17 @@ footer a{
     .vet-team-cards img{
         width: 220px;
     }
+    .about-footer{
+        grid-column: 1/5;
+        padding: 0;
+    }
+    .services-footer{
+        grid-column: 5/9;
+        padding: 0;
+    }
+    .subscribe-footer{
+        grid-column: 9/13;
+        margin: 0;
+    }
 
 }
