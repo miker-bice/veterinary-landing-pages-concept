@@ -94,6 +94,32 @@ h1,h2,h3,h4,h5,p{
 .nav-links a{
     color: #fff;
 }
+.search-box{
+    visibility: hidden;
+}
+.search-box form{
+    display: flex;
+    justify-content: flex-end;
+}
+.search-box input{
+    background-color: var(--primary);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    font-size: .85em;
+    font-family: 'Poppins', sans-serif; 
+}
+.search-box input:focus{
+    border: 0;
+    outline: 0;
+}
+.search-box a{
+    border-radius: 0;
+    font-size: .85em;
+    margin-left: -5px;
+}
 .hero-text{
     grid-column: 1/13;
     text-align: center;
@@ -418,15 +444,22 @@ footer a{
         padding: 20px 9%;
     }
     .navbar-brand{
-        grid-column: 1/5;
+        grid-column: 1/4;
+    }
+    .navbar-brand img{
+        width: 90%;
     }
     .nav-links{
-        grid-column: 5/9;
+        grid-column: 4/10;
         visibility: visible;
     }
     .nav-items{
         padding: 0;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+    .search-box{
+        grid-column: 10/13;
+        visibility: visible;
     }
     .hero{
         align-items: center;
