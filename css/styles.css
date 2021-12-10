@@ -80,6 +80,20 @@ h1,h2,h3,h4,h5,p{
 .align-items{
     align-self: center;
 }
+.input-field{
+    background-color: var(--primary);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    font-size: .85em;
+    font-family: 'Poppins', sans-serif; 
+}
+.input-field:focus{
+    border: 0;
+    outline: 0;
+}
 /* fonts */
 
 /* mobile styles */
@@ -93,6 +107,18 @@ h1,h2,h3,h4,h5,p{
 }
 .nav-links a{
     color: #fff;
+}
+.search-box{
+    visibility: hidden;
+}
+.search-box form{
+    display: flex;
+    justify-content: flex-end;
+}
+.search-box a{
+    border-radius: 0;
+    font-size: .85em;
+    margin-left: -5px;
 }
 .hero-text{
     grid-column: 1/13;
@@ -127,7 +153,10 @@ h1,h2,h3,h4,h5,p{
 .animal-lover{
     text-align: center;
     padding-top: 70px;
-    padding-bottom: 50px
+    padding-bottom: 50px;
+    /* override to the display: grid */
+    display: flex;
+    flex-direction: column-reverse;
 }
 .lover-img{
     grid-column: 1/13;
@@ -166,18 +195,23 @@ h1,h2,h3,h4,h5,p{
     width: 80%;
     margin: 10px auto;
 }
-.services-card{
+.services-cards{
+    grid-template-columns: repeat(12, 1fr);
+}
+.services-card1,
+.services-card2,
+.services-card3{
     grid-column: 1/13;
     margin: 20px;
 }
-.services-card img{
+.services-cards img{
     width: var(--image-size);
     border: 4px #fff solid;
 }
-.services-card h4{
+.services-cards h4{
     font-size: 2em;
 }
-.services-card p{
+.services-cards p{
     font-size: .85em;
     width: 60%;
     margin: 0 auto;
@@ -187,6 +221,8 @@ h1,h2,h3,h4,h5,p{
     padding-top: 70px;
     padding-bottom: 50px;
     color: var(--third);
+    display: flex;
+    flex-direction: column-reverse;
 }
 .lover-img2{
     grid-column: 1/13;
@@ -224,19 +260,21 @@ h1,h2,h3,h4,h5,p{
     width: 80%;
     margin: 0 auto;
 }
-.clients-card{
-    grid-column: 1/13;
-    margin: 25px 0;
-}
-.clients-card img{
+.clients-cards img{
     width: var(--image-size);
     border: 4px #fff solid;
 }
-.clients-card h4{
+.clients-cards h4{
     font-size: 2em;
 }
-.clients-card a{
+.clients-cards a{
     margin: 10px; 
+}
+.clients-card1,
+.clients-card2,
+.clients-card3{
+    grid-column: 1/13;
+    margin: 25px 0;
 }
 .vetcare-team{
     color: var(--third);
@@ -252,17 +290,19 @@ h1,h2,h3,h4,h5,p{
     width: 80%;
     margin: 0 auto;
 }
-.vet-team-card{
+.vet-team-card1,
+.vet-team-card2,
+.vet-team-card3{
     grid-column: 1/13;
     margin: 30px 0;
 }
-.vet-team-card img{
+.vet-team-cards img{
     width: var(--image-size);
 }
-.vet-team-card h4{
+.vet-team-cards h4{
     font-size: 1.5em;
 }
-.vet-team-card h5{
+.vet-team-cards h5{
     font-size: .85em;
     font-weight: 400;
 }
@@ -275,7 +315,9 @@ h1,h2,h3,h4,h5,p{
     text-align: center;
     color: #fff;
 }
-.banner-item1, .banner-item2, .banner-item3{
+.banner-item1, 
+.banner-item2, 
+.banner-item3{ 
     grid-column: 1/13;
     margin: 15px 0;
 }
@@ -316,9 +358,26 @@ footer a{
 .subscribe-footer p{
     font-size: .90em;
 }
+.subscribe-footer form{
+    margin-top: 20px;
+}
+.subscribe-footer input{
+    width: 60%;
+    height: 100%;
+}
+.subscribe-footer a{
+    border-radius: 0;
+    margin-left: -5px;
+}
 
 /* small tablet styling */
 @media screen and (min-width: 620px) {
+    .container-fluid{
+        padding: 6% 9%;
+    }
+    .navigation{ 
+        padding: 20px 9%;
+    }
     .main-heading{
         color: #fff;
         font-weight: 600;
@@ -340,6 +399,8 @@ footer a{
     }
     .lover-text h3{
         font-size: 2.25em;
+        width: 65%;
+        margin: 20px auto;
     }
     .lover-text p{
         font-size: 1em;
@@ -355,6 +416,8 @@ footer a{
     }
     .lover-text2 h3{
         font-size: 2.25em;
+        width: 65%;
+        margin: 20px auto;
     }
     .lover-text2 p{
         font-size: 1em;
@@ -368,7 +431,7 @@ footer a{
     .our-clients p{
         font-size: 1em;
     }
-    .clients-card a{
+    .clients-cards a{
         font-size: 1.15em;
     }
     .vetcare-team h3{
@@ -391,12 +454,28 @@ footer a{
 /* large tablets & laptop styles */
 @media screen and (min-width: 960px) {
     .container-fluid{
-        padding: 60px 70px;
+        /* padding: 60px 70px; */
+        padding: 6% 9%;
     }
     .navigation{ 
-        padding: 20px 70px;
+        padding: 20px 9%;
+    }
+    .navbar-brand{
+        grid-column: 1/4;
+    }
+    .navbar-brand img{
+        width: 90%;
     }
     .nav-links{
+        grid-column: 4/10;
+        visibility: visible;
+    }
+    .nav-items{
+        padding: 0;
+        justify-content: space-around;
+    }
+    .search-box{
+        grid-column: 10/13;
         visibility: visible;
     }
     .hero{
@@ -419,6 +498,112 @@ footer a{
         margin: 0;
     }
     .hero-buttons > a{
-            margin-right: 15px;
+        margin-right: 15px;
     }
+    .animal-lover{
+        display: grid;
+        align-items: center;
+    }
+    .lover-text{
+        grid-column: 1/7;
+        text-align: left;
+    }
+    .lover-text h3{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .lover-text p{
+        margin: 0;
+    }
+    .lover-img{
+        grid-column: 7/13;
+    }
+    .lover-img img{
+        width: 350px;
+    }
+    .services-offered{
+        padding: 0;
+    }
+    .service-subheader{
+        width: 60%;
+    }
+    .services-card1{
+        grid-column: 1/5;
+    }
+    .services-card2{
+        grid-column: 5/9;
+    }
+    .services-card3{
+        grid-column: 9/13;
+    }
+    .services-cards img{
+        width: 220px;
+    }
+    .services-cards p{
+        width: 80%;
+    }
+    .animal-lover2 {
+        display: grid;
+        align-items: center;
+    }
+    .lover-text2{
+        grid-column: 1/7;
+        text-align: left;
+    }
+    .lover-text2 h3{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .lover-text2 p{
+        margin: 0;
+    }
+    .lover-img2{
+        grid-column: 7/13;
+    }
+    .lover-img2 img{
+        width: 350px;
+    }
+    .our-clients{
+        padding: 0;
+    }
+    .our-clients p{
+        width: 60%;
+    }
+    .clients-card1{
+        grid-column: 1/5;
+    }
+    .clients-card2{
+        grid-column: 5/9;
+    }
+    .clients-card3{
+        grid-column: 9/13;
+    }
+    .clients-cards img{
+        width: 220px;
+    }
+    .vet-team-card1{
+        grid-column: 1/5;
+    }
+    .vet-team-card2{
+        grid-column: 5/9;
+    }
+    .vet-team-card3{
+        grid-column: 9/13;
+    }
+    .vet-team-cards img{
+        width: 220px;
+    }
+    .about-footer{
+        grid-column: 1/5;
+        padding: 0;
+    }
+    .services-footer{
+        grid-column: 5/9;
+        padding: 0;
+    }
+    .subscribe-footer{
+        grid-column: 9/13;
+        margin: 0;
+    }
+
 }
