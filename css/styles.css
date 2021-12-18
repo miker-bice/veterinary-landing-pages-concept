@@ -654,4 +654,10 @@ footer a{
         width: 100%;
         font-size: 1.15em;
     }
+    .service-header{
+        font-size: 2.55em;
+    }
+    .service-subheader{
+        font-size: 1.15em;
+    }
 }
