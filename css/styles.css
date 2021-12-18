@@ -394,6 +394,8 @@ footer a{
     }
     .hero-buttons a{
         font-size: 1.25em;
+        width: auto;
+        margin: 0 10px;
     }
     .hero-img img{
         width: 350px;
