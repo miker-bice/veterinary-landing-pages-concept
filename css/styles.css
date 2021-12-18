@@ -610,3 +610,37 @@ footer a{
     }
 
 }
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+    .container-fluid{
+        /* padding: 60px 70px; */
+        padding: 6% 13%;
+    }
+    .navigation{ 
+        padding: 20px 13%;
+    }
+    .navbar-brand img{
+        width: 70%;
+    }
+    .hero-text{
+        grid-column: 1/8;
+    }
+    .main-heading{
+        font-size: 3em;
+    }
+    .sub-heading{
+        font-size: 1.5em;
+    }
+    .hero-buttons a{
+        font-size: 1.35em;
+        padding: 15px 25px;
+        margin-right: 30px;
+    }
+    .hero-img{
+        grid-column: 8/13;
+    }
+    .hero-img img{
+        width: 370px;
+    }
+}
