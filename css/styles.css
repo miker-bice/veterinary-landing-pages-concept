@@ -141,7 +141,8 @@ h1,h2,h3,h4,h5,p{
     margin: 15px 0;
 }
 .hero-buttons a{
-    margin: 0 10px
+    width: 80%;
+    margin: 5px 0;
 }
 .hero-img{
     grid-column: 1/13;
@@ -393,6 +394,8 @@ footer a{
     }
     .hero-buttons a{
         font-size: 1.25em;
+        width: auto;
+        margin: 0 10px;
     }
     .hero-img img{
         width: 350px;
