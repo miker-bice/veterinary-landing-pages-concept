@@ -647,4 +647,11 @@ footer a{
     .hero-img img{
         width: 370px;
     }
+    .lover-text h3{
+        font-size: 2.55em;
+    }
+    .lover-text p{
+        width: 100%;
+        font-size: 1.15em;
+    }
 }
