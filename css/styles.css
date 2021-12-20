@@ -673,4 +673,11 @@ footer a{
     .our-clients p{
         font-size: 1.15em;
     }
+    .vetcare-team h3{
+        font-size: 2.55em;
+    }
+    .vetcare-team p{
+        font-size: 1.15em;
+        width: 70%;
+    }
 }
