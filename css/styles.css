@@ -629,6 +629,13 @@ footer a{
     .navbar-brand img{
         width: 70%;
     }
+    .search-box a{
+        font-size: .85em;
+        padding: 10px 15px;
+    }
+    .search-box input{
+        width: 60%;
+    }
     .hero-text{
         grid-column: 1/8;
     }
@@ -682,5 +689,13 @@ footer a{
     }
     .banner-items h4, h5{
         font-size: 1.35em;
+    }
+    .subscribe-footer input{
+        height: 100%;
+        margin: 0;
+    }
+    .subscribe-footer a{
+        font-size: .85em;
+        padding: 10px 15px;
     }
 }
