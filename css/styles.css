@@ -680,4 +680,7 @@ footer a{
         font-size: 1.15em;
         width: 70%;
     }
+    .banner-items h4, h5{
+        font-size: 1.35em;
+    }
 }
