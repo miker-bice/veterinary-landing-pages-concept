@@ -660,4 +660,11 @@ footer a{
     .service-subheader{
         font-size: 1.15em;
     }
+    .lover-text2 h3{
+        font-size: 2.55em;
+    }
+    .lover-text2 p{
+        width: 100%;
+        font-size: 1.15em;
+    }
 }
