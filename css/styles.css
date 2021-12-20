@@ -667,4 +667,10 @@ footer a{
         width: 100%;
         font-size: 1.15em;
     }
+    .our-clients h3{
+        font-size: 2.55em;
+    }
+    .our-clients p{
+        font-size: 1.15em;
+    }
 }
