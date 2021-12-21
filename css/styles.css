@@ -664,7 +664,7 @@ footer a{
         font-size: 1.15em;
     }
     .services-cards{
-        margin: 20px 0;
+        margin: 50px 0;
     }
     .services-card1,
     .services-card2,
@@ -685,11 +685,27 @@ footer a{
         width: 100%;
         font-size: 1.15em;
     }
+    .clients-cards{
+        margin: 50px 0;
+    }
+    .clients-card1,
+    .clients-card2,
+    .clients-card3{
+        margin: 0;
+    }
     .our-clients h3{
         font-size: 2.55em;
     }
     .our-clients p{
         font-size: 1.15em;
+    }
+    .vet-team-cards{
+        margin: 50px 0;
+    }
+    .vet-team-card1,
+    .vet-team-card2,
+    .vet-team-card3{
+        margin: 0;
     }
     .vetcare-team h3{
         font-size: 2.55em;
@@ -697,6 +713,11 @@ footer a{
     .vetcare-team p{
         font-size: 1.15em;
         width: 70%;
+    }
+    .banner-item1,
+    .banner-item2,
+    .banner-item3{
+        margin: 0;
     }
     .banner-items h4, h5{
         font-size: 1.35em;
@@ -710,3 +731,5 @@ footer a{
         padding: 10px 15px;
     }
 }
+
+/* MINOR CHANGES NA LANG SA STYLING */
