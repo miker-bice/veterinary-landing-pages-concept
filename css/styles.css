@@ -610,3 +610,126 @@ footer a{
     }
 
 }
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+    .container-fluid{
+        /* padding: 60px 70px; */
+        padding: 6% 13%;
+    }
+    .btn-primary,
+    .btn-outline,
+    .btn-secondary{
+        font-size: 1.35em;
+        padding: 15px 25px;
+    }
+    .navigation{ 
+        padding: 20px 13%;
+    }
+    .navbar-brand img{
+        width: 70%;
+    }
+    .search-box a{
+        font-size: .85em;
+        padding: 10px 15px;
+    }
+    .search-box input{
+        width: 60%;
+    }
+    .hero-text{
+        grid-column: 1/8;
+    }
+    .main-heading{
+        font-size: 3.40em;
+    }
+    .sub-heading{
+        font-size: 1.5em;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .hero-buttons a{
+        margin-right: 30px;
+    }
+    .hero-img{
+        grid-column: 8/13;
+    }
+    .hero-img img{
+        width: 370px;
+    }
+    .lover-text h3{
+        font-size: 2.55em;
+    }
+    .lover-text p{
+        width: 100%;
+        font-size: 1.15em;
+    }
+    .services-cards{
+        margin: 50px 0;
+    }
+    .services-card1,
+    .services-card2,
+    .services-card3{
+        margin: 0;
+    }
+
+    .service-header{
+        font-size: 2.55em;
+    }
+    .service-subheader{
+        font-size: 1.15em;
+    }
+    .lover-text2 h3{
+        font-size: 2.55em;
+    }
+    .lover-text2 p{
+        width: 100%;
+        font-size: 1.15em;
+    }
+    .clients-cards{
+        margin: 50px 0;
+    }
+    .clients-card1,
+    .clients-card2,
+    .clients-card3{
+        margin: 0;
+    }
+    .our-clients h3{
+        font-size: 2.55em;
+    }
+    .our-clients p{
+        font-size: 1.15em;
+    }
+    .vet-team-cards{
+        margin: 50px 0;
+    }
+    .vet-team-card1,
+    .vet-team-card2,
+    .vet-team-card3{
+        margin: 0;
+    }
+    .vetcare-team h3{
+        font-size: 2.55em;
+    }
+    .vetcare-team p{
+        font-size: 1.15em;
+        width: 70%;
+    }
+    .banner-item1,
+    .banner-item2,
+    .banner-item3{
+        margin: 0;
+    }
+    .banner-items h4, h5{
+        font-size: 1.35em;
+    }
+    .subscribe-footer input{
+        height: 100%;
+        margin: 0;
+    }
+    .subscribe-footer a{
+        font-size: .85em;
+        padding: 10px 15px;
+    }
+}
+
+/* MINOR CHANGES NA LANG SA STYLING */
